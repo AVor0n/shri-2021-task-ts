@@ -5,7 +5,7 @@ export type TextOptions = {
     mono?: boolean;
     link?: string;
 };
-export function markdown(text: string, options?: TextOptions): string {
+export function markdown(text: string, options: TextOptions): string {
     let result = text;
     if (options) {
         if (options.bold) {
